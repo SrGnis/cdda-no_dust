@@ -28,13 +28,13 @@ This automation system downloads data from the CDDA repository, processes it to 
 
 1. Clone this repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/SrGnis/cdda-no_dust
 cd cdda-no_dust
 ```
 
 2. Install dependencies (if any):
 ```bash
-pip install -r requirements.txt  # If you have additional dependencies
+pip install -r requirements.txt
 ```
 
 3. Configure the system:
