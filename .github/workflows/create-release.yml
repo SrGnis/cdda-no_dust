@@ -5,7 +5,6 @@ on:
     tags:
       - '*cdda-experimental*'
 
-
 env:
   PYTHON_VERSION: '3.9'
 
@@ -115,25 +114,31 @@ jobs:
         fi
         
     - name: Create GitHub Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ steps.tag_info.outputs.tag_name }}
-        release_name: ${{ steps.tag_info.outputs.release_name }}
+        name: ${{ steps.tag_info.outputs.release_name }}
         draft: false
         prerelease: ${{ steps.tag_info.outputs.is_prerelease }}
-        
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip
-        asset_name: cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip
-        asset_content_type: application/zip
+        files: |
+          cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip
+        body: |
+          ## CDDA No Dust Mod - ${{ steps.tag_info.outputs.tag_name }}
+          
+          This release contains mod files that disable dust generation in Cataclysm: Dark Days Ahead.
+          
+          ### Installation
+          1. Download the ZIP file below
+          2. Extract all mod directories to your CDDA mods folder
+          3. Enable the desired mods in the game's mod selection screen
+          
+          ### What's Included
+          - `no_dust`: Main mod that disables dust in the base game
+          - `no_dust_*`: Additional mods for various CDDA expansions
+          
+          Each mod directory contains modinfo.json and various JSON files with dust generation disabled.
+          
+          **Note:** This is a ${{ steps.tag_info.outputs.is_prerelease == 'true' && 'pre-release' || 'stable release' }} build.
         
     - name: Cleanup temporary files
       if: always()
@@ -147,6 +152,4 @@ jobs:
         echo "✅ Release created successfully!"
         echo "📦 Release: ${{ steps.tag_info.outputs.release_name }}"
         echo "🏷️  Tag: ${{ steps.tag_info.outputs.tag_name }}"
-        echo "🔗 URL: ${{ steps.create_release.outputs.html_url }}"
         echo "📋 Pre-release: ${{ steps.tag_info.outputs.is_prerelease }}"
-
