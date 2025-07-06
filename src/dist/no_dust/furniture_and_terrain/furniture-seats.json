@@ -1,0 +1,182 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_bench",
+    "copy-from": "f_bench",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_armchair",
+    "copy-from": "f_armchair",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_chair",
+    "copy-from": "f_chair",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_sofa",
+    "copy-from": "f_sofa",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_stool",
+    "copy-from": "f_stool",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_logstool",
+    "copy-from": "f_logstool",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_deckchair",
+    "copy-from": "f_deckchair",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bench_wooden",
+    "copy-from": "f_bench_wooden",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bench_park",
+    "copy-from": "f_bench_park",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_chair_plywood",
+    "copy-from": "f_chair_plywood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_chair_black",
+    "copy-from": "f_chair_black",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_chair_white",
+    "copy-from": "f_chair_white",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

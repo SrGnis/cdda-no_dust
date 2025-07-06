@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "xe_f_throne",
+    "copy-from": "xe_f_throne",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_barkfloor_no_roof",
+    "copy-from": "t_barkfloor_no_roof",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

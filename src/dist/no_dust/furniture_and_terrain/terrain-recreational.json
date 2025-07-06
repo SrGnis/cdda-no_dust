@@ -1,0 +1,32 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_sandbox",
+    "copy-from": "t_sandbox",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_backboard",
+    "copy-from": "t_backboard",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

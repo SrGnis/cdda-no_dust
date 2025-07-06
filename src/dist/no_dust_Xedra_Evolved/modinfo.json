@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "no_dust_xedra_evolved",
+    "name": "No Dust - Xedra Evolved",
+    "authors": [
+      "SrGnis"
+    ],
+    "description": "Prevents dust from being generated in Xedra Evolved.",
+    "category": "item_exclude",
+    "dependencies": [
+      "dda",
+      "xedra_evolved"
+    ],
+    "core": false,
+    "obsolete": false,
+    "version": "cdda-experimental-2025-07-04-0219"
+  }
+]

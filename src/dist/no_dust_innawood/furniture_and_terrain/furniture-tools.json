@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_fvat_empty",
+    "copy-from": "f_fvat_empty",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bulletin",
+    "copy-from": "f_bulletin",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

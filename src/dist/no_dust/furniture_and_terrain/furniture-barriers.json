@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_barricade_road",
+    "copy-from": "f_barricade_road",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_lane",
+    "copy-from": "f_lane",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

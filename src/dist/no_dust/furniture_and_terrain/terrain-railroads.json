@@ -1,0 +1,317 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_railroad_track",
+    "copy-from": "t_railroad_track",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_h",
+    "copy-from": "t_railroad_track_h",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_v",
+    "copy-from": "t_railroad_track_v",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_d",
+    "copy-from": "t_railroad_track_d",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_d1",
+    "copy-from": "t_railroad_track_d1",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_d2",
+    "copy-from": "t_railroad_track_d2",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie",
+    "copy-from": "t_railroad_tie",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie_h",
+    "copy-from": "t_railroad_tie_h",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie_v",
+    "copy-from": "t_railroad_tie_v",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie_d",
+    "copy-from": "t_railroad_tie_d",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_on_tie",
+    "copy-from": "t_railroad_track_on_tie",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_h_on_tie",
+    "copy-from": "t_railroad_track_h_on_tie",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_v_on_tie",
+    "copy-from": "t_railroad_track_v_on_tie",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_d_on_tie",
+    "copy-from": "t_railroad_track_d_on_tie",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_buffer_stop",
+    "copy-from": "t_buffer_stop",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie_d1",
+    "copy-from": "t_railroad_tie_d1",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_tie_d2",
+    "copy-from": "t_railroad_tie_d2",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_crossbuck_wood",
+    "copy-from": "t_crossbuck_wood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_small",
+    "copy-from": "t_railroad_track_small",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_small_d",
+    "copy-from": "t_railroad_track_small_d",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railroad_track_recessed",
+    "copy-from": "t_railroad_track_recessed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

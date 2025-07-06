@@ -1,0 +1,92 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_hedge_short",
+    "copy-from": "f_hedge_short",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_hedge_tall",
+    "copy-from": "f_hedge_tall",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_topiary_abstract",
+    "copy-from": "f_topiary_abstract",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_topiary_animal",
+    "copy-from": "f_topiary_animal",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_topiary_dragon",
+    "copy-from": "f_topiary_dragon",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_beaver_dam",
+    "copy-from": "f_beaver_dam",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
