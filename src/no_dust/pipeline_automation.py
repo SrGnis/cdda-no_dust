@@ -35,6 +35,7 @@ class PipelineAutomation:
         self.processor = MainProcessor(config)
         self.version_tracker = VersionTracker(config)
         self.git_manager = GitManager(config)
+        self.initial_version = None
     
     def run_pipeline(self) -> bool:
         """
@@ -50,6 +51,9 @@ class PipelineAutomation:
         """
         try:
             self.logger.info("Starting pipeline automation...")
+
+            # Get the initial version before processing
+            self.initial_version = self.version_tracker.get_last_version()
 
             # Check for new tags and process them
             if not self._check_and_process_new_tags():
@@ -110,13 +114,12 @@ class PipelineAutomation:
             # Make a final commit to track the last version processed
             # Only commit if tags were processed and the version actually changed
             if new_tags:
-                final_version = new_tags[-1]
                 last_version = self.version_tracker.get_last_version()
-                self.logger.info(f"Checking final version tracking: final={final_version}, last={last_version}")
+                self.logger.info(f"Checking final version tracking: initial={self.initial_version}, last={last_version}")
                 
-                if final_version != last_version:
+                if self.initial_version != last_version:
                     self.logger.info("Version changed, committing final tracking update")
-                    if not self._commit_version_tracking(final_version):
+                    if not self._commit_version_tracking(last_version):
                         self.logger.error("Failed to commit final version tracking")
                         return False
                 else:
