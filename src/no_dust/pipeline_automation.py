@@ -112,13 +112,17 @@ class PipelineAutomation:
             if new_tags:
                 final_version = new_tags[-1]
                 last_version = self.version_tracker.get_last_version()
+                self.logger.info(f"Checking final version tracking: final={final_version}, last={last_version}")
+                
                 if final_version != last_version:
+                    self.logger.info("Version changed, committing final tracking update")
                     if not self._commit_version_tracking(final_version):
                         self.logger.error("Failed to commit final version tracking")
                         return False
                 else:
-                    self.logger.debug("Last version unchanged, skipping final commit")
+                    self.logger.info("Last version unchanged, skipping final commit")
 
+            self.logger.debug("Completed processing all new tags")
             return True
 
         except Exception as e:
