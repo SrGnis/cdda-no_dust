@@ -1,10 +1,10 @@
 # CDDA No Dust Mod
 
-An automated system for creating no-dust mods for Cataclysm: Dark Days Ahead (CDDA) from the official repository data.
+A mod collection that prevents the generation of dust in CDDA.
 
 ## Overview
 
-This automation system downloads data from the CDDA repository, processes it to remove dust generation effects, and creates separate mod packages for the main game and individual mods. The system can run continuously to automatically process new CDDA releases.
+This automation system downloads data from the CDDA repository, processes it to remove dust generation effects, and creates separate mod packages for the main game and individual mods.
 
 ## Features
 
