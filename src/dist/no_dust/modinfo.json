@@ -7,7 +7,7 @@
     "description": "Prevents dust from being generated.",
     "category": "item_exclude",
     "dependencies": [ "dda" ],
-    "version": "cdda-experimental-2025-07-04-0449",
+    "version": "",
     "core": false,
     "obsolete": false
   }
