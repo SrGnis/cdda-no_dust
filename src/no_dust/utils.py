@@ -300,7 +300,7 @@ def get_git_tags(repo_url: str, pattern: Optional[str] = None) -> List[str]:
                     tag = tag[:-3]
                 
                 # Apply pattern filter if specified
-                if pattern is None or pattern in tag:
+                if pattern is None or tag.startswith(pattern):
                     tags.append(tag)
         
         return sorted(tags, reverse=True)  # Most recent first
