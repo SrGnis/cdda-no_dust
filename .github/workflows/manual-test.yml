@@ -1,0 +1,265 @@
+name: Manual Test and Process
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'CDDA tag to process (e.g., cdda-experimental-2025-07-04-0449)'
+        required: true
+        type: string
+      dry_run:
+        description: 'Dry run (do not commit changes)'
+        required: false
+        type: boolean
+        default: false
+      log_level:
+        description: 'Log level'
+        required: false
+        type: choice
+        options:
+          - INFO
+          - DEBUG
+          - WARNING
+          - ERROR
+        default: INFO
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  validate-input:
+    name: Validate Input
+    runs-on: ubuntu-latest
+    
+    outputs:
+      tag: ${{ steps.validate.outputs.tag }}
+      
+    steps:
+    - name: Validate tag format
+      id: validate
+      run: |
+        TAG="${{ github.event.inputs.tag }}"
+        
+        # Basic validation for CDDA tag format
+        if [[ ! "$TAG" =~ ^cdda-experimental-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{4}$ ]]; then
+          echo "Error: Tag format is invalid. Expected format: cdda-experimental-YYYY-MM-DD-HHMM"
+          echo "Example: cdda-experimental-2025-07-04-0449"
+          exit 1
+        fi
+        
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+        echo "Tag validation passed: $TAG"
+
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    needs: validate-input
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Install test dependencies if needed
+        
+    - name: Run unit tests
+      run: |
+        python -m pytest tests/ -v --tb=short
+        
+    - name: Validate configuration
+      run: |
+        python -c "
+        import sys
+        sys.path.insert(0, 'src')
+        from no_dust.config import Config
+        config = Config.load_from_file('config.json')
+        errors = config.validate()
+        if errors:
+            print('Configuration errors:')
+            for error in errors:
+                print(f'  - {error}')
+            sys.exit(1)
+        else:
+            print('Configuration is valid')
+        "
+
+  process:
+    name: Process CDDA Tag
+    runs-on: ubuntu-latest
+    needs: [validate-input, test]
+    
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Configure Git
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        
+    - name: Create backup
+      run: |
+        # Create backup of current state
+        mkdir -p backup
+        if [ -d "src" ]; then
+          cp -r src backup/src_backup_$(date +%Y%m%d_%H%M%S)
+        fi
+        if [ -f "last_version" ]; then
+          cp last_version backup/
+        fi
+        if [ -f "last_sha" ]; then
+          cp last_sha backup/
+        fi
+        
+    - name: Process tag
+      run: |
+        echo "Processing CDDA tag: ${{ needs.validate-input.outputs.tag }}"
+
+        python -m src.no_dust.main_processor \
+          "${{ needs.validate-input.outputs.tag }}" \
+          --config config.json \
+          --log-level "${{ github.event.inputs.log_level }}"
+          
+    - name: Validate output
+      run: |
+        echo "Validating output..."
+        
+        # Check if src directory was created/updated
+        if [ ! -d "src" ]; then
+          echo "Error: src directory was not created"
+          exit 1
+        fi
+        
+        # Check if main no_dust mod was created
+        if [ ! -d "src/no_dust" ]; then
+          echo "Error: src/no_dust directory was not created"
+          exit 1
+        fi
+        
+        # Check if modinfo.json exists
+        if [ ! -f "src/no_dust/modinfo.json" ]; then
+          echo "Error: src/no_dust/modinfo.json was not created"
+          exit 1
+        fi
+        
+        # Count created mods
+        MOD_COUNT=$(find src -name "no_dust_*" -type d | wc -l)
+        echo "Created $MOD_COUNT mod-specific folders"
+        
+        # Check version file
+        if [ -f "last_version" ]; then
+          LAST_VERSION=$(cat last_version)
+          echo "Updated last_version to: $LAST_VERSION"
+        fi
+        
+        echo "Output validation passed"
+        
+    - name: Show changes
+      run: |
+        echo "=== Git Status ==="
+        git status
+        
+        echo "=== Changed Files ==="
+        git diff --name-only
+        
+        echo "=== New Files ==="
+        git ls-files --others --exclude-standard
+        
+        echo "=== Directory Structure ==="
+        find src -type f -name "*.json" | head -20
+        
+    - name: Commit changes (if not dry run)
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        # Check if there are any changes to commit
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "Committing changes..."
+          
+          git add .
+          git commit -m "Process CDDA tag: ${{ needs.validate-input.outputs.tag }}
+
+          - Processed tag: ${{ needs.validate-input.outputs.tag }}
+          - Generated no-dust mods for main game and individual mods
+          - Updated version tracking files
+          - Automated commit from GitHub Actions"
+          
+          echo "Changes committed successfully"
+        else
+          echo "No changes to commit"
+        fi
+        
+    - name: Create tag (if not dry run)
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        TAG_NAME="no-dust-${{ needs.validate-input.outputs.tag }}"
+        
+        # Check if tag already exists
+        if git tag -l "$TAG_NAME" | grep -q "$TAG_NAME"; then
+          echo "Tag $TAG_NAME already exists, skipping tag creation"
+        else
+          git tag -a "$TAG_NAME" -m "No-dust mods for CDDA ${{ needs.validate-input.outputs.tag }}"
+          echo "Created tag: $TAG_NAME"
+        fi
+        
+    - name: Push changes (if not dry run)
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        echo "Pushing changes..."
+        git push origin main
+        git push origin --tags
+        echo "Changes pushed successfully"
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: processing-results-${{ needs.validate-input.outputs.tag }}
+        path: |
+          src/
+          no_dust.log
+          error_log.json
+          backup/
+        retention-days: 30
+        
+    - name: Summary
+      if: always()
+      run: |
+        echo "=== Processing Summary ==="
+        echo "Tag processed: ${{ needs.validate-input.outputs.tag }}"
+        echo "Dry run: ${{ github.event.inputs.dry_run }}"
+        echo "Log level: ${{ github.event.inputs.log_level }}"
+        
+        if [ -d "src" ]; then
+          echo "Main mod created: $([ -d 'src/no_dust' ] && echo 'Yes' || echo 'No')"
+          MOD_COUNT=$(find src -name "no_dust_*" -type d | wc -l)
+          echo "Individual mods created: $MOD_COUNT"
+        fi
+        
+        if [ -f "last_version" ]; then
+          echo "Last version: $(cat last_version)"
+        fi
+        
+        echo "Workflow completed successfully!"

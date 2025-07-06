@@ -1,0 +1,18 @@
+# CDDA No Dust Requirements
+# 
+# This project uses only Python standard library modules
+# No external dependencies are required for the core functionality
+#
+# Optional dependencies for development and testing:
+
+# Testing (optional)
+pytest>=7.0.0
+
+# Code formatting (optional)
+black>=22.0.0
+
+# Linting (optional)
+flake8>=4.0.0
+
+# Type checking (optional)
+mypy>=0.950

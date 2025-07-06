@@ -1,0 +1,152 @@
+name: Create Release on Tag
+
+on:
+  push:
+    tags:
+      - '*cdda-experimental*'
+
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Extract tag information
+      id: tag_info
+      run: |
+        TAG_NAME=${GITHUB_REF#refs/tags/}
+        echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
+        echo "release_name=CDDA No Dust Mod - $TAG_NAME" >> $GITHUB_OUTPUT
+        
+        # Check if this is a pre-release (experimental, alpha, beta, rc)
+        if [[ "$TAG_NAME" =~ (experimental|alpha|beta|rc) ]]; then
+          echo "is_prerelease=true" >> $GITHUB_OUTPUT
+        else
+          echo "is_prerelease=false" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "Tag: $TAG_NAME"
+        echo "Release name: CDDA No Dust Mod - $TAG_NAME"
+        
+    - name: Verify dist directory exists
+      run: |
+        if [ ! -d "src/dist" ]; then
+          echo "Error: src/dist directory not found!"
+          echo "Available directories in src/:"
+          ls -la src/ || echo "src/ directory not found"
+          exit 1
+        fi
+        
+        echo "Contents of src/dist:"
+        ls -la src/dist/
+        
+        # Count mod directories
+        MOD_COUNT=$(find src/dist -maxdepth 1 -type d ! -path src/dist | wc -l)
+        echo "Found $MOD_COUNT mod directories"
+        
+        if [ "$MOD_COUNT" -eq 0 ]; then
+          echo "Warning: No mod directories found in src/dist"
+        fi
+        
+    - name: Create release archive
+      run: |
+        # Create a temporary directory for organizing release files
+        mkdir -p release_temp
+        
+        # Copy all mod directories from src/dist to release_temp
+        if [ -d "src/dist" ] && [ "$(ls -A src/dist)" ]; then
+          cp -r src/dist/* release_temp/
+          echo "Copied mod files to release directory"
+        else
+          echo "Warning: src/dist is empty or doesn't exist"
+        fi
+        
+        # Create a README for the release
+        cat > release_temp/README.txt << 'EOF'
+        CDDA No Dust Mod Collection
+        ===========================
+        
+        This archive contains mod files that disable dust generation in Cataclysm: Dark Days Ahead.
+        
+        Installation:
+        1. Extract all mod directories to your CDDA mods folder
+        2. Enable the desired mods in the game's mod selection screen
+        
+        Included Mods:
+        - no_dust: Main mod that disables dust in the base game
+        - no_dust_*: Additional mods for various CDDA expansions
+        
+        Each mod directory contains:
+        - modinfo.json: Mod metadata and dependencies
+        - Various JSON files: Modified game data with dust generation disabled
+        
+        For more information, visit: https://github.com/${{ github.repository }}
+        EOF
+        
+        # List contents for verification
+        echo "Release archive contents:"
+        find release_temp -type f | sort
+        
+    - name: Create ZIP archive
+      run: |
+        cd release_temp
+        zip -r "../cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip" .
+        cd ..
+        
+        # Verify archive was created
+        if [ -f "cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip" ]; then
+          echo "Archive created successfully"
+          ls -lh "cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip"
+        else
+          echo "Error: Failed to create archive"
+          exit 1
+        fi
+        
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.tag_info.outputs.tag_name }}
+        release_name: ${{ steps.tag_info.outputs.release_name }}
+        draft: false
+        prerelease: ${{ steps.tag_info.outputs.is_prerelease }}
+        
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip
+        asset_name: cdda-no-dust-${{ steps.tag_info.outputs.tag_name }}.zip
+        asset_content_type: application/zip
+        
+    - name: Cleanup temporary files
+      if: always()
+      run: |
+        rm -rf release_temp
+        rm -f cdda-no-dust-*.zip
+        echo "Cleanup completed"
+        
+    - name: Log release information
+      run: |
+        echo "✅ Release created successfully!"
+        echo "📦 Release: ${{ steps.tag_info.outputs.release_name }}"
+        echo "🏷️  Tag: ${{ steps.tag_info.outputs.tag_name }}"
+        echo "🔗 URL: ${{ steps.create_release.outputs.html_url }}"
+        echo "📋 Pre-release: ${{ steps.tag_info.outputs.is_prerelease }}"
+

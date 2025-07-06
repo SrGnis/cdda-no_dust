@@ -1,0 +1,7 @@
+tmp
+source_data
+augment_journal.md
+__pycache__
+.pytest_cache
+.vscode
+.idea

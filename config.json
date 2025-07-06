@@ -1,0 +1,38 @@
+{
+  "source_repo_url": "https://github.com/CleverRaven/Cataclysm-DDA.git",
+  "project_root": ".",
+  "temp_dir": "tmp",
+  "source_data_dir": "source_data",
+  "output_dir": "src/dist",
+  "main_output_dir": "src/dist/no_dust",
+  "mod_output_prefix": "src/dist/no_dust_",
+  "data_json_path": "data/json",
+  "data_mods_path": "data/mods",
+  "organized_main_data": "tmp/dda",
+  "organized_mods_data": "tmp/mods",
+  "last_version_file": "last_version",
+  "last_sha_file": "last_sha",
+  "cleanup_temp_files": true,
+  "preserve_folder_structure": true,
+  "mod_template": {
+    "type": "MOD_INFO",
+    "id": "no_dust_{mod_name}",
+    "name": "No Dust - {mod_display_name}",
+    "authors": [ "SrGnis" ],
+    "description": "Prevents dust from being generated in {mod_display_name}.",
+    "category": "item_exclude",
+    "dependencies": [ "dda", "{mod_name}" ],
+    "core": false,
+    "obsolete": false
+  },
+  "git_sparse_checkout": true,
+  "git_depth": 1,
+  "git_filter_blob": true,
+  "excluded_mods": [
+    "dda",
+    "TEST_DATA",
+    "default.json"
+  ],
+  "log_file": "no_dust.log",
+  "log_level": "INFO"
+}
