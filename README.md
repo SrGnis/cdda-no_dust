@@ -52,14 +52,9 @@ python -m src.no_dust.main_processor cdda-experimental-2025-07-04-0449
 
 ### Pipeline Processing
 
-Run the pipeline once:
+Run the pipeline:
 ```bash
-python -m src.no_dust.pipeline_automation --single-run
-```
-
-Run continuous processing (checks every hour):
-```bash
-python -m src.no_dust.pipeline_automation --check-interval 3600
+python -m src.no_dust.pipeline_automation
 ```
 
 ## Architecture
@@ -89,7 +84,7 @@ CDDA Repository → Download → Organize → Process → Output Mods → Git Op
 ### Output Structure
 
 ```
-src/
+src/dist/
 ├── no_dust/                    # Main CDDA no-dust mod
 │   ├── modinfo.json
 │   └── [processed JSON files]
@@ -140,98 +135,3 @@ The system includes GitHub Actions workflows:
    - Commit and push changes
    - Create release tags
    - Handle errors and notifications
-
-## Testing
-
-Run the test suite:
-```bash
-python -m pytest tests/ -v
-```
-
-Run specific test categories:
-```bash
-# Unit tests only
-python -m pytest tests/test_automation.py::TestConfig -v
-
-# Integration tests
-python -m pytest tests/test_automation.py::TestIntegration -v
-```
-
-## Monitoring and Debugging
-
-### Log Files
-
-- `automation.log`: Main automation log
-- `error_log.json`: Structured error log with recovery information
-
-### Status Checking
-
-Check the current status:
-```bash
-python -c "
-from src.automation.version_tracker import VersionTracker
-from src.automation.config import Config
-config = Config.load_from_file('config.json')
-tracker = VersionTracker(config)
-status = tracker.get_tracking_status()
-print('Status:', status)
-"
-```
-
-### Manual Recovery
-
-Reset tracking (useful for testing):
-```bash
-python -c "
-from src.automation.version_tracker import VersionTracker
-from src.automation.config import Config
-config = Config.load_from_file('config.json')
-tracker = VersionTracker(config)
-tracker.reset_tracking()
-print('Tracking reset')
-"
-```
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Download Failures**: Check internet connection and CDDA repository availability
-2. **Processing Errors**: Verify JSON file formats and processing logic
-3. **Git Errors**: Check repository permissions and git configuration
-4. **Configuration Errors**: Validate config.json format and required fields
-
-### Error Recovery
-
-The system includes automatic error recovery:
-- Download failures: Cleanup partial downloads and retry
-- Processing errors: Restore from backup if available
-- Git errors: Reset to clean state when possible
-
-### Manual Intervention
-
-If automation fails:
-1. Check error logs
-2. Run manual processing for specific tags
-3. Use backup restoration if needed
-4. Reset tracking files if necessary
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
-
-## License
-
-[Add your license information here]
-
-## Support
-
-For issues and questions:
-1. Check the error logs
-2. Review the troubleshooting section
-3. Create an issue in the repository
-4. Include relevant log files and configuration
