@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "no_dust_innawood",
+    "name": "No Dust - Innawood",
+    "authors": [
+      "SrGnis"
+    ],
+    "description": "Prevents dust from being generated in Innawood.",
+    "category": "item_exclude",
+    "dependencies": [
+      "dda",
+      "innawood"
+    ],
+    "core": false,
+    "obsolete": false,
+    "version": "cdda-experimental-2025-07-04-0219"
+  }
+]

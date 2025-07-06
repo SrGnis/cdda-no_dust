@@ -1,0 +1,391 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_pachira",
+    "copy-from": "t_tree_pachira",
+    "transforms_into": "t_tree_pachira_harvested",
+    "looks_like": "t_tree_hickory",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_pachira_harvested",
+    "copy-from": "t_tree_pachira_harvested",
+    "transforms_into": "t_tree_pachira",
+    "looks_like": "t_tree_hickory_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_gevuina",
+    "copy-from": "t_tree_gevuina",
+    "transforms_into": "t_tree_gevuina_harvested",
+    "looks_like": "t_tree_hickory",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_gevuina_harvested",
+    "copy-from": "t_tree_gevuina_harvested",
+    "transforms_into": "t_tree_gevuina",
+    "looks_like": "t_tree_hickory_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_ceiba",
+    "copy-from": "t_tree_ceiba",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_acacia",
+    "copy-from": "t_tree_acacia",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_huizache",
+    "copy-from": "t_tree_huizache",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_parajubea",
+    "copy-from": "t_tree_parajubea",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_guayacan",
+    "copy-from": "t_tree_guayacan",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_ficus",
+    "copy-from": "t_tree_ficus",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_mango",
+    "copy-from": "t_tree_mango",
+    "transforms_into": "t_tree_mango_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_mango_harvested",
+    "copy-from": "t_tree_mango_harvested",
+    "transforms_into": "t_tree_mango",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_papaya",
+    "copy-from": "t_tree_papaya",
+    "transforms_into": "t_tree_papaya_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_papaya_harvested",
+    "copy-from": "t_tree_papaya_harvested",
+    "transforms_into": "t_tree_papaya",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_pomegranate",
+    "copy-from": "t_tree_pomegranate",
+    "transforms_into": "t_tree_pomegranate_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_pomegranate_harvested",
+    "copy-from": "t_tree_pomegranate_harvested",
+    "transforms_into": "t_tree_pomegranate",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_coconut",
+    "copy-from": "t_tree_coconut",
+    "transforms_into": "t_tree_coconut_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_coconut_harvested",
+    "copy-from": "t_tree_coconut_harvested",
+    "transforms_into": "t_tree_coconut",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_orange",
+    "copy-from": "t_tree_orange",
+    "transforms_into": "t_tree_orange_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_orange_harvested",
+    "copy-from": "t_tree_orange_harvested",
+    "transforms_into": "t_tree_orange",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_lemon",
+    "copy-from": "t_tree_lemon",
+    "transforms_into": "t_tree_lemon_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_lemon_harvested",
+    "copy-from": "t_tree_lemon_harvested",
+    "transforms_into": "t_tree_lemon",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_grapefruit",
+    "copy-from": "t_tree_grapefruit",
+    "transforms_into": "t_tree_grapefruit_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_grapefruit_harvested",
+    "copy-from": "t_tree_grapefruit_harvested",
+    "transforms_into": "t_tree_grapefruit",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

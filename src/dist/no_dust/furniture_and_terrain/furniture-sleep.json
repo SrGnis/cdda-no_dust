@@ -1,0 +1,109 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_bed",
+    "copy-from": "f_bed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bunkbed",
+    "copy-from": "f_bunkbed",
+    "looks_like": "f_bed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bed_down",
+    "copy-from": "f_bed_down",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bunkbed_down",
+    "copy-from": "f_bunkbed_down",
+    "looks_like": "f_bed_down",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bed_frame",
+    "copy-from": "f_bed_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_makeshift_bed",
+    "copy-from": "f_makeshift_bed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_straw_bed",
+    "copy-from": "f_straw_bed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

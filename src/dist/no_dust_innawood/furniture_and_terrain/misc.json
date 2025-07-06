@@ -1,0 +1,18 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_beaver_dam",
+    "copy-from": "f_beaver_dam",
+    "looks_like": "t_wall_log",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

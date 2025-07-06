@@ -1,0 +1,104 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_fig",
+    "copy-from": "t_tree_fig",
+    "transforms_into": "t_tree_fig_harvested",
+    "looks_like": "t_tree",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_fig_harvested",
+    "copy-from": "t_tree_fig_harvested",
+    "transforms_into": "t_tree_fig",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_pomegranate",
+    "copy-from": "t_tree_pomegranate",
+    "transforms_into": "t_tree_pomegranate_harvested",
+    "looks_like": "t_tree",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_pomegranate_harvested",
+    "copy-from": "t_tree_pomegranate_harvested",
+    "transforms_into": "t_tree_pomegranate",
+    "looks_like": "t_tree_dead",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_hawthorn",
+    "copy-from": "t_tree_hawthorn",
+    "transforms_into": "t_tree_hawthorn_harvested",
+    "looks_like": "t_tree",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_hawthorn_harvested",
+    "copy-from": "t_tree_hawthorn_harvested",
+    "transforms_into": "t_tree_hawthorn",
+    "looks_like": "t_tree_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

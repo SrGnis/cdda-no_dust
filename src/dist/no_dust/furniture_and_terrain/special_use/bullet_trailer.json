@@ -1,0 +1,36 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_bullettrailer_inner_door",
+    "copy-from": "t_bullettrailer_inner_door",
+    "open": "t_bullettrailer_inner_door_o",
+    "looks_like": "t_door_metal_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_bullettrailer_inner_door_o",
+    "copy-from": "t_bullettrailer_inner_door_o",
+    "close": "t_bullettrailer_inner_door",
+    "looks_like": "t_door_metal_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

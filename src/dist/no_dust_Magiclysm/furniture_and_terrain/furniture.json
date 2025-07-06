@@ -1,0 +1,65 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_magic_bench",
+    "copy-from": "f_magic_bench",
+    "looks_like": "f_table",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_everburning_candelabra",
+    "copy-from": "f_everburning_candelabra",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_everburning_torch_candelabra",
+    "copy-from": "f_everburning_torch_candelabra",
+    "looks_like": "f_everburning_candelabra",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_brambles",
+    "copy-from": "f_druid_brambles",
+    "looks_like": "f_brambles",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

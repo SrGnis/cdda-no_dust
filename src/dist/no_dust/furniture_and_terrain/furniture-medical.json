@@ -1,0 +1,18 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_autodoc_couch",
+    "copy-from": "f_autodoc_couch",
+    "looks_like": "f_sofa",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

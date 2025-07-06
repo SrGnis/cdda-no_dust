@@ -1,0 +1,18 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_lixa_whiteboard",
+    "copy-from": "f_lixa_whiteboard",
+    "looks_like": "f_bulletin",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

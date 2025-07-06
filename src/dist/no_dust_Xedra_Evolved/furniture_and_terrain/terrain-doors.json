@@ -1,0 +1,83 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_door_elocked",
+    "copy-from": "t_door_elocked",
+    "open": "t_door_o",
+    "looks_like": "t_door_c",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_peep",
+    "copy-from": "t_door_elocked_peep",
+    "open": "t_door_o_peep",
+    "looks_like": "t_door_c_peep",
+    "prying": {
+      "result": "t_door_o_peep",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_alarm",
+    "copy-from": "t_door_elocked_alarm",
+    "looks_like": "t_door_locked",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "alarm": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

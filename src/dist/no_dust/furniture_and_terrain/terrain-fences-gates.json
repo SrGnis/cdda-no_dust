@@ -1,0 +1,212 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_palisade_gate",
+    "copy-from": "t_palisade_gate",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_palisade_gate_o",
+    "copy-from": "t_palisade_gate_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fencegate_c",
+    "copy-from": "t_fencegate_c",
+    "open": "t_fencegate_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fencegate_o",
+    "copy-from": "t_fencegate_o",
+    "close": "t_fencegate_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fence",
+    "copy-from": "t_fence",
+    "prying": {
+      "result": "t_fence_post",
+      "duration": "30 seconds",
+      "message": "You pry out the fence post.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 6
+        },
+        {
+          "item": "2x4",
+          "count": 3
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wattle_fence",
+    "copy-from": "t_wattle_fence",
+    "looks_like": "t_fence",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_splitrail_fencegate_c",
+    "copy-from": "t_splitrail_fencegate_c",
+    "open": "t_splitrail_fencegate_o",
+    "looks_like": "t_fencegate_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_splitrail_fencegate_o",
+    "copy-from": "t_splitrail_fencegate_o",
+    "close": "t_splitrail_fencegate_c",
+    "looks_like": "t_fencegate_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_privacy_fencegate_c",
+    "copy-from": "t_privacy_fencegate_c",
+    "open": "t_privacy_fencegate_o",
+    "looks_like": "t_fencegate_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_privacy_fencegate_o",
+    "copy-from": "t_privacy_fencegate_o",
+    "close": "t_privacy_fencegate_c",
+    "looks_like": "t_fencegate_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_railing",
+    "copy-from": "t_railing",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_boom_barrier_lowered",
+    "copy-from": "t_boom_barrier_lowered",
+    "looks_like": "t_guardrail",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_embrasure_wood",
+    "copy-from": "t_embrasure_wood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_wood_widened",
+    "copy-from": "t_wall_wood_widened",
+    "looks_like": "t_embrasure_wood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_embrasure_log",
+    "copy-from": "t_embrasure_log",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_widened",
+    "copy-from": "t_wall_log_widened",
+    "looks_like": "t_embrasure_log",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_palisade_embrasure",
+    "copy-from": "t_palisade_embrasure",
+    "looks_like": "t_embrasure_log",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

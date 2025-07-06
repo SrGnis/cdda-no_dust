@@ -1,0 +1,162 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_druid_glowing_bulb",
+    "copy-from": "f_druid_glowing_bulb",
+    "looks_like": "f_glowingbulb",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_bookcase",
+    "copy-from": "f_druid_bookcase",
+    "looks_like": "f_bookcase",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_bed",
+    "copy-from": "f_druid_bed",
+    "looks_like": "f_makeshift_bed",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_chair",
+    "copy-from": "f_druid_chair",
+    "looks_like": "f_chair",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_desk",
+    "copy-from": "f_druid_desk",
+    "looks_like": "f_desk",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_wardrobe",
+    "copy-from": "f_druid_wardrobe",
+    "looks_like": "f_dresser",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_table",
+    "copy-from": "f_druid_table",
+    "looks_like": "f_table",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_rack_wood",
+    "copy-from": "f_druid_rack_wood",
+    "looks_like": "f_rack_wood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_sink",
+    "copy-from": "f_druid_sink",
+    "looks_like": "f_sink",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_druid_counter",
+    "copy-from": "f_druid_counter",
+    "looks_like": "f_counter",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

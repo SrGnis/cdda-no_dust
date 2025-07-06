@@ -1,0 +1,189 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_window_empty",
+    "copy-from": "t_window_empty",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_empty_curtains_open",
+    "copy-from": "t_window_empty_curtains_open",
+    "close": "t_window_empty_curtains_closed",
+    "looks_like": "t_window_empty",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_empty_curtains_closed",
+    "copy-from": "t_window_empty_curtains_closed",
+    "open": "t_window_empty_curtains_open",
+    "looks_like": "t_curtains",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_boarded",
+    "copy-from": "t_window_boarded",
+    "prying": {
+      "result": "t_window",
+      "duration": "2 minutes",
+      "message": "You pry the boards from the window.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_boarded_noglass",
+    "copy-from": "t_window_boarded_noglass",
+    "looks_like": "t_window_boarded",
+    "prying": {
+      "result": "t_window_empty",
+      "duration": "2 minutes",
+      "message": "You pry the boards from the window frame.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_boarded_shutters_closed",
+    "copy-from": "t_window_boarded_shutters_closed",
+    "open": "t_window_boarded_shutters_open",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_boarded_shutters_open",
+    "copy-from": "t_window_boarded_shutters_open",
+    "open": "t_window_boarded_shutters_open_fully",
+    "close": "t_window_boarded_shutters_closed",
+    "looks_like": "t_window",
+    "prying": {
+      "result": "t_window_boarded_shutters_open_fully",
+      "duration": "30 seconds",
+      "message": "You pry the window open"
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_reinforced",
+    "copy-from": "t_window_reinforced",
+    "looks_like": "t_window_boarded",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_window_reinforced_noglass",
+    "copy-from": "t_window_reinforced_noglass",
+    "looks_like": "t_window_reinforced",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

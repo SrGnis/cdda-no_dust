@@ -1,0 +1,33 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_wooden_flagpole",
+    "copy-from": "f_wooden_flagpole",
+    "looks_like": "f_flagpole",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_utility_pole",
+    "copy-from": "f_utility_pole",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

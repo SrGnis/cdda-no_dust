@@ -1,0 +1,932 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_door_c",
+    "copy-from": "t_door_c",
+    "open": "t_door_o",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You notice the door is unlocked, so you simply open it.",
+      "prying_data": {}
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked",
+    "copy-from": "t_door_elocked",
+    "open": "t_door_o",
+    "looks_like": "t_door_c",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_peep",
+    "copy-from": "t_door_elocked_peep",
+    "open": "t_door_o_peep",
+    "looks_like": "t_door_c_peep",
+    "prying": {
+      "result": "t_door_o_peep",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_alarm",
+    "copy-from": "t_door_elocked_alarm",
+    "looks_like": "t_door_locked",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "alarm": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_lab_c",
+    "copy-from": "t_door_lab_c",
+    "open": "t_door_lab_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_white_c",
+    "copy-from": "t_door_white_c",
+    "open": "t_door_white_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_gray_c",
+    "copy-from": "t_door_gray_c",
+    "open": "t_door_gray_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_red_c",
+    "copy-from": "t_door_red_c",
+    "open": "t_door_red_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_green_c",
+    "copy-from": "t_door_green_c",
+    "open": "t_door_green_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_white_o",
+    "copy-from": "t_door_white_o",
+    "close": "t_door_white_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_gray_o",
+    "copy-from": "t_door_gray_o",
+    "close": "t_door_gray_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_red_o",
+    "copy-from": "t_door_red_o",
+    "close": "t_door_red_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_green_o",
+    "copy-from": "t_door_green_o",
+    "close": "t_door_green_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_white_b",
+    "copy-from": "t_door_white_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_gray_b",
+    "copy-from": "t_door_gray_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_red_b",
+    "copy-from": "t_door_red_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_green_b",
+    "copy-from": "t_door_green_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_white_frame",
+    "copy-from": "t_door_white_frame",
+    "looks_like": "t_door_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_gray_frame",
+    "copy-from": "t_door_gray_frame",
+    "looks_like": "t_door_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_red_frame",
+    "copy-from": "t_door_red_frame",
+    "looks_like": "t_door_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_green_frame",
+    "copy-from": "t_door_green_frame",
+    "looks_like": "t_door_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_c_peep",
+    "copy-from": "t_door_c_peep",
+    "open": "t_door_o_peep",
+    "looks_like": "t_door_c",
+    "prying": {
+      "result": "t_door_o_peep",
+      "message": "You notice the door is unlocked, so you simply open it.",
+      "prying_data": {}
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_b",
+    "copy-from": "t_door_b",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_lab_b",
+    "copy-from": "t_door_lab_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_b_peep",
+    "copy-from": "t_door_b_peep",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_o",
+    "copy-from": "t_door_o",
+    "close": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_lab_o",
+    "copy-from": "t_door_lab_o",
+    "close": "t_door_lab_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_o_peep",
+    "copy-from": "t_door_o_peep",
+    "close": "t_door_c_peep",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rdoor_c",
+    "copy-from": "t_rdoor_c",
+    "open": "t_rdoor_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rdoor_b",
+    "copy-from": "t_rdoor_b",
+    "looks_like": "t_door_b",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rdoor_o",
+    "copy-from": "t_rdoor_o",
+    "close": "t_rdoor_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_locked_interior",
+    "copy-from": "t_door_locked_interior",
+    "looks_like": "t_door_locked",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_locked",
+    "copy-from": "t_door_locked",
+    "open": "t_door_o",
+    "looks_like": "t_door_c",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_locked_peep",
+    "copy-from": "t_door_locked_peep",
+    "open": "t_door_o_peep",
+    "looks_like": "t_door_c_peep",
+    "prying": {
+      "result": "t_door_o_peep",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_locked_alarm",
+    "copy-from": "t_door_locked_alarm",
+    "looks_like": "t_door_locked",
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": {
+        "difficulty": 6,
+        "prying_level": 2,
+        "noisy": true,
+        "alarm": true,
+        "failure": "You pry, but can't pry open the door."
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_makeshift_c",
+    "copy-from": "t_door_makeshift_c",
+    "open": "t_door_makeshift_o",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_makeshift_o",
+    "copy-from": "t_door_makeshift_o",
+    "close": "t_door_makeshift_c",
+    "looks_like": "t_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_frame",
+    "copy-from": "t_door_frame",
+    "looks_like": "t_floor",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_lab_frame",
+    "copy-from": "t_door_lab_frame",
+    "looks_like": "t_door_frame",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_boarded",
+    "copy-from": "t_door_boarded",
+    "looks_like": "t_door_locked",
+    "prying": {
+      "result": "t_door_c",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_boarded_damaged",
+    "copy-from": "t_door_boarded_damaged",
+    "looks_like": "t_door_b",
+    "prying": {
+      "result": "t_door_b",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_boarded_peep",
+    "copy-from": "t_door_boarded_peep",
+    "looks_like": "t_door_boarded",
+    "prying": {
+      "result": "t_door_c_peep",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rdoor_boarded",
+    "copy-from": "t_rdoor_boarded",
+    "looks_like": "t_door_boarded",
+    "prying": {
+      "result": "t_rdoor_c",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rdoor_boarded_damaged",
+    "copy-from": "t_rdoor_boarded_damaged",
+    "looks_like": "t_door_b",
+    "prying": {
+      "result": "t_rdoor_b",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_boarded_damaged_peep",
+    "copy-from": "t_door_boarded_damaged_peep",
+    "looks_like": "t_door_boarded_damaged",
+    "prying": {
+      "result": "t_door_b_peep",
+      "duration": "30 seconds",
+      "message": "You pry the boards from the door.",
+      "byproducts": [
+        {
+          "item": "nail",
+          "count": 8
+        },
+        {
+          "item": "2x4",
+          "count": 4
+        }
+      ],
+      "prying_data": {
+        "prying_nails": true
+      }
+    },
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

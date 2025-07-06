@@ -1,0 +1,50 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_druid_wood_wall",
+    "copy-from": "t_druid_wood_wall",
+    "looks_like": "t_triffid_wood_wall",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_heartwood_floor",
+    "copy-from": "t_heartwood_floor",
+    "looks_like": "t_barkfloor",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_druid_root_floor",
+    "copy-from": "t_druid_root_floor",
+    "looks_like": "t_root_floor",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
