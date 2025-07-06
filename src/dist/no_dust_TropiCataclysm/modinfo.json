@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "no_dust_tropicata",
+    "name": "No Dust - TropiCataclysm",
+    "authors": [
+      "SrGnis"
+    ],
+    "description": "Prevents dust from being generated in TropiCataclysm.",
+    "category": "item_exclude",
+    "dependencies": [
+      "dda",
+      "tropicata"
+    ],
+    "core": false,
+    "obsolete": false,
+    "version": "cdda-experimental-2025-07-04-0219"
+  }
+]

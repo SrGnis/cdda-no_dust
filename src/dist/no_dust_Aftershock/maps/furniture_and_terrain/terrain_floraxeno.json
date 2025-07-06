@@ -1,0 +1,32 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_xeno",
+    "copy-from": "t_tree_xeno",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_xenoinfested",
+    "copy-from": "t_tree_xenoinfested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

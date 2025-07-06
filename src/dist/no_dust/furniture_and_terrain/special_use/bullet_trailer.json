@@ -1,0 +1,32 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_bullettrailer_inner_door",
+    "copy-from": "t_bullettrailer_inner_door",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_bullettrailer_inner_door_o",
+    "copy-from": "t_bullettrailer_inner_door_o",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "no_dust_aftershock",
+    "name": "No Dust - Aftershock",
+    "authors": [
+      "SrGnis"
+    ],
+    "description": "Prevents dust from being generated in Aftershock.",
+    "category": "item_exclude",
+    "dependencies": [
+      "dda",
+      "aftershock"
+    ],
+    "core": false,
+    "obsolete": false,
+    "version": "cdda-experimental-2025-07-04-0219"
+  }
+]

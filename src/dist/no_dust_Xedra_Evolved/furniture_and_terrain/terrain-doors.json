@@ -1,0 +1,47 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_door_elocked",
+    "copy-from": "t_door_elocked",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_peep",
+    "copy-from": "t_door_elocked_peep",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_elocked_alarm",
+    "copy-from": "t_door_elocked_alarm",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

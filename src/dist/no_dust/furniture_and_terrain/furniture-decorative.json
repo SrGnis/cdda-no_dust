@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_mannequin",
+    "copy-from": "f_mannequin",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_styling_station",
+    "copy-from": "f_styling_station",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

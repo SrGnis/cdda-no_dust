@@ -1,0 +1,17 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_magic_brambles",
+    "copy-from": "f_magic_brambles",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_hawk_nest",
+    "copy-from": "t_tree_hawk_nest",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

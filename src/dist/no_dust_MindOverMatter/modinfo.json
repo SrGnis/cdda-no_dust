@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "no_dust_mindovermatter",
+    "name": "No Dust - Mind Over Matter",
+    "authors": [
+      "SrGnis"
+    ],
+    "description": "Prevents dust from being generated in Mind Over Matter.",
+    "category": "item_exclude",
+    "dependencies": [
+      "dda",
+      "mindovermatter"
+    ],
+    "core": false,
+    "obsolete": false,
+    "version": "cdda-experimental-2025-07-04-0219"
+  }
+]
