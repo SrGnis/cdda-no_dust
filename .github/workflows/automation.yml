@@ -60,7 +60,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.AUTOMATION_TOKEN }}
         fetch-depth: 0
         
     - name: Set up Python
