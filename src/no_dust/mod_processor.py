@@ -205,33 +205,72 @@ class ModProcessor:
     def _process_json_object(self, obj: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """
         Process a single JSON object (adapted from disable_dust.py).
-        
+
+        Uses copy-from but explicitly copies problematic fields that don't inherit
+        properly due to CDDA inheritance bugs in mapdata.cpp.
+
         Args:
             obj: The JSON object to process
-            
+
         Returns:
             Optional[Dict]: Processed object in the required format, or None if no target fields
         """
         if not self._has_target_fields(obj):
             return None
-        
+
         # Extract the base information
         result = {}
-        
+
         # Copy required fields
         if "type" in obj:
             result["type"] = obj["type"]
         if "id" in obj:
             result["id"] = obj["id"]
             result["copy-from"] = obj["id"]
-        
+
+        # Copy problematic fields that get lost due to CDDA inheritance bugs
+        # These fields don't inherit properly with copy-from due to bugs in mapdata.cpp
+        self._copy_inheritance_problematic_fields(obj, result)
+
         # Extract and process fields with hit_field or destroyed_field
         processed_fields = self._extract_and_zero_fields(obj)
         if processed_fields:
             result.update(processed_fields)
-        
+
         return result
-    
+
+    def _copy_inheritance_problematic_fields(self, source: Dict[str, Any], target: Dict[str, Any]) -> None:
+        """
+        Copy fields that don't inherit properly with copy-from due to CDDA bugs.
+
+        These fields have inheritance issues in CDDA's mapdata.cpp:
+        - open/close properties (lines 1152-1154: was_loaded = false)
+        - Activity data: prying, oxytorch, boltcut, hacksaw (lines 1160-1178: unconditional overwrite)
+
+        Args:
+            source: Source object to copy fields from
+            target: Target object to copy fields to
+        """
+        # Door functionality fields (critical for doors to work)
+        if "open" in source:
+            target["open"] = source["open"]
+        if "close" in source:
+            target["close"] = source["close"]
+        if "transforms_into" in source:
+            target["transforms_into"] = source["transforms_into"]
+        if "looks_like" in source:
+            target["looks_like"] = source["looks_like"]
+
+        # Activity data fields (get overwritten unconditionally in CDDA)
+        if "prying" in source:
+            target["prying"] = source["prying"]
+        if "oxytorch" in source:
+            target["oxytorch"] = source["oxytorch"]
+        if "boltcut" in source:
+            target["boltcut"] = source["boltcut"]
+        if "hacksaw" in source:
+            target["hacksaw"] = source["hacksaw"]
+
     def _has_target_fields(self, obj: Any) -> bool:
         """
         Recursively check if an object contains hit_field or destroyed_field.
