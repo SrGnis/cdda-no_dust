@@ -1,4 +1,4 @@
-# CDDA No Dust Mod Automation
+# CDDA No Dust Mod
 
 An automated system for creating no-dust mods for Cataclysm: Dark Days Ahead (CDDA) from the official repository data.
 
