@@ -1,6 +1,54 @@
 [
   {
     "type": "furniture",
+    "id": "f_chemical_mixer",
+    "copy-from": "f_chemical_mixer",
+    "looks_like": "f_machinery_light",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_generator_broken",
+    "copy-from": "f_generator_broken",
+    "looks_like": "f_machinery_old",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_machinery_light",
+    "copy-from": "f_machinery_light",
+    "looks_like": "t_machinery_light",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_machinery_heavy",
+    "copy-from": "f_machinery_heavy",
+    "looks_like": "t_machinery_heavy",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
     "id": "f_machinery_old",
     "copy-from": "f_machinery_old",
     "looks_like": "t_machinery_old",
@@ -10,7 +58,19 @@
         0
       ],
       "destroyed_field": [
-        "fd_splinters",
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_control_station",
+    "copy-from": "f_control_station",
+    "looks_like": "t_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
         0
       ]
     }

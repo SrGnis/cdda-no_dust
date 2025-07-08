@@ -1,16 +1,240 @@
 [
   {
     "type": "furniture",
+    "id": "f_autodoc",
+    "copy-from": "f_autodoc",
+    "looks_like": "f_robotic_arm",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
     "id": "f_autodoc_couch",
     "copy-from": "f_autodoc_couch",
     "looks_like": "f_sofa",
     "bash": {
-      "hit_field": [
-        "fd_dust",
-        0
-      ],
       "destroyed_field": [
-        "fd_splinters",
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_autoclave",
+    "copy-from": "f_autoclave",
+    "looks_like": "f_washer",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_autoclave_full",
+    "copy-from": "f_autoclave_full",
+    "looks_like": "f_washer",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_sample_freezer",
+    "copy-from": "f_sample_freezer",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_fume_hood",
+    "copy-from": "f_fume_hood",
+    "looks_like": "f_lab_bench",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_shaker",
+    "copy-from": "f_shaker",
+    "looks_like": "f_glass_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_HPLC",
+    "copy-from": "f_HPLC",
+    "looks_like": "f_machinery_light",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_GC",
+    "copy-from": "f_GC",
+    "looks_like": "f_machinery_old",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_MS",
+    "copy-from": "f_MS",
+    "looks_like": "f_machinery_heavy",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_NMR",
+    "copy-from": "f_NMR",
+    "looks_like": "f_machinery_heavy",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_electron_microscope",
+    "copy-from": "f_electron_microscope",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_CTscan",
+    "copy-from": "f_CTscan",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_MRI",
+    "copy-from": "f_MRI",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_anesthetic",
+    "copy-from": "f_anesthetic",
+    "looks_like": "f_ventilator",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dialysis",
+    "copy-from": "f_dialysis",
+    "looks_like": "f_standing_tank",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_ventilator",
+    "copy-from": "f_ventilator",
+    "looks_like": "f_standing_tank",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_centrifuge",
+    "copy-from": "f_centrifuge",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_xray",
+    "copy-from": "f_xray",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dental_xray",
+    "copy-from": "f_dental_xray",
+    "looks_like": "f_machinery_electronic",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
         0
       ]
     }

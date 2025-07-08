@@ -1,0 +1,93 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_bathtub",
+    "copy-from": "f_bathtub",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_shower",
+    "copy-from": "f_shower",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_sink",
+    "copy-from": "f_sink",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_sink_gravity",
+    "copy-from": "f_sink_gravity",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_toilet",
+    "copy-from": "f_toilet",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_water_heater",
+    "copy-from": "f_water_heater",
+    "looks_like": "f_standing_tank",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_water_heater_family",
+    "copy-from": "f_water_heater_family",
+    "looks_like": "f_water_heater",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_water_purifier",
+    "copy-from": "f_water_purifier",
+    "looks_like": "f_water_heater",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  }
+]

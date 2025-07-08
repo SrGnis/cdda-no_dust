@@ -1,0 +1,145 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_fridge",
+    "copy-from": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_minifridge",
+    "copy-from": "f_minifridge",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_glass_fridge",
+    "copy-from": "f_glass_fridge",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_glass_fridge_double",
+    "copy-from": "f_glass_fridge_double",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_heavy_duty_fridge",
+    "copy-from": "f_heavy_duty_fridge",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_display_fridge",
+    "copy-from": "f_display_fridge",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_minifreezer",
+    "copy-from": "f_minifreezer",
+    "looks_like": "minifreezer",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_chest_minifreezer",
+    "copy-from": "f_chest_minifreezer",
+    "looks_like": "minifreezer",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_freezer",
+    "copy-from": "f_freezer",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_heavy_duty_freezer",
+    "copy-from": "f_heavy_duty_freezer",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_glass_freezer",
+    "copy-from": "f_glass_freezer",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_display_freezer",
+    "copy-from": "f_display_freezer",
+    "looks_like": "f_fridge",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  }
+]
