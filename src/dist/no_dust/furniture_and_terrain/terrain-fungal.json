@@ -1,0 +1,137 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_marloss",
+    "copy-from": "t_marloss",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus",
+    "copy-from": "t_fungus",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_floor_in",
+    "copy-from": "t_fungus_floor_in",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_floor_sup",
+    "copy-from": "t_fungus_floor_sup",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_floor_out",
+    "copy-from": "t_fungus_floor_out",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_wall",
+    "copy-from": "t_fungus_wall",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_wall_transformed",
+    "copy-from": "t_fungus_wall_transformed",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_fungus_mound",
+    "copy-from": "t_fungus_mound",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_shrub_fungal",
+    "copy-from": "t_shrub_fungal",
+    "bash": {
+      "hit_field": [
+        "fd_spores",
+        0
+      ],
+      "destroyed_field": [
+        "fd_fungal_splinters",
+        0
+      ]
+    }
+  }
+]
