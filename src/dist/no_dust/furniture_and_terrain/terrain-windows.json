@@ -141,7 +141,7 @@
     "prying": {
       "result": "t_window_boarded_shutters_open_fully",
       "duration": "30 seconds",
-      "message": "You pry the window open"
+      "message": "You pry open the window."
     },
     "bash": {
       "hit_field": [
