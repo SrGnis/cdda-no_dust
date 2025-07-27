@@ -1,8 +1,9 @@
 [
   {
     "type": "terrain",
-    "id": "t_window_empty",
-    "copy-from": "t_window_empty",
+    "id": "t_window_empty_no_roof",
+    "copy-from": "t_window_empty_no_roof",
+    "looks_like": "t_window_empty",
     "bash": {
       "hit_field": [
         "fd_dust",
