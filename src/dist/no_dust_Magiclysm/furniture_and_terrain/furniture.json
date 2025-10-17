@@ -17,6 +17,22 @@
   },
   {
     "type": "furniture",
+    "id": "f_huge_mana_crystal",
+    "copy-from": "f_huge_mana_crystal",
+    "looks_like": "f_boulder_large",
+    "bash": {
+      "hit_field": [
+        "fd_mana_overload",
+        0
+      ],
+      "destroyed_field": [
+        "fd_mana_overload",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
     "id": "f_everburning_candelabra",
     "copy-from": "f_everburning_candelabra",
     "bash": {
