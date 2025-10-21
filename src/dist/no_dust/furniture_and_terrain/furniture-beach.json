@@ -14,20 +14,5 @@
         0
       ]
     }
-  },
-  {
-    "type": "furniture",
-    "id": "f_broken_boat",
-    "copy-from": "f_broken_boat",
-    "bash": {
-      "hit_field": [
-        "fd_dust",
-        0
-      ],
-      "destroyed_field": [
-        "fd_splinters",
-        0
-      ]
-    }
   }
 ]
