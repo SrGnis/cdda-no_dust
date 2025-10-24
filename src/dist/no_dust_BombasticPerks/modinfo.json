@@ -1,16 +1,16 @@
 [
   {
     "type": "MOD_INFO",
-    "id": "no_dust_tropicata",
-    "name": "No Dust - TropiCataclysm",
+    "id": "no_dust_bombastic_perks",
+    "name": "No Dust - Bombastic Perks",
     "authors": [
       "SrGnis"
     ],
-    "description": "Prevents dust from being generated in TropiCataclysm.",
+    "description": "Prevents dust from being generated in Bombastic Perks.",
     "category": "item_exclude",
     "dependencies": [
       "dda",
-      "tropicata"
+      "bombastic_perks"
     ],
     "core": false,
     "obsolete": false,

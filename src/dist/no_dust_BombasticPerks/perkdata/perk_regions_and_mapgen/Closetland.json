@@ -1,0 +1,50 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_closetland_floor",
+    "copy-from": "t_closetland_floor",
+    "looks_like": "t_floor",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_closetland_wall_wood",
+    "copy-from": "t_closetland_wall_wood",
+    "looks_like": "t_wall_wood",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_closetland_door",
+    "copy-from": "t_closetland_door",
+    "looks_like": "t_door_c",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
