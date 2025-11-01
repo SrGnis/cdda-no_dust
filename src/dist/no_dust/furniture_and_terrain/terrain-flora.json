@@ -48,6 +48,21 @@
   },
   {
     "type": "terrain",
+    "id": "t_highland_holy_tree",
+    "copy-from": "t_highland_holy_tree",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
     "id": "t_tree_young",
     "copy-from": "t_tree_young",
     "looks_like": "t_tree",
