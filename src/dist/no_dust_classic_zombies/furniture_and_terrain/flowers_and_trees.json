@@ -1,0 +1,18 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_spruce",
+    "copy-from": "t_tree_spruce",
+    "looks_like": "t_tree_pine",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

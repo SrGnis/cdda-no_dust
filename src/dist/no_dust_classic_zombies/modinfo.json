@@ -1,16 +1,16 @@
 [
   {
     "type": "MOD_INFO",
-    "id": "no_dust_magiclysm",
-    "name": "No Dust - Magiclysm",
+    "id": "no_dust_classic_zombies",
+    "name": "No Dust - Dark Days of the Dead",
     "authors": [
       "SrGnis"
     ],
-    "description": "Prevents dust from being generated in Magiclysm.",
+    "description": "Prevents dust from being generated in Dark Days of the Dead.",
     "category": "item_exclude",
     "dependencies": [
       "dda",
-      "magiclysm"
+      "classic_zombies"
     ],
     "core": false,
     "obsolete": false,
