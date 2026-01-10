@@ -1,0 +1,18 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_trunk_fungal",
+    "copy-from": "t_trunk_fungal",
+    "looks_like": "t_trunk",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
