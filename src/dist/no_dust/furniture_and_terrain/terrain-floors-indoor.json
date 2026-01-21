@@ -32,6 +32,22 @@
   },
   {
     "type": "terrain",
+    "id": "t_floor_rotted",
+    "copy-from": "t_floor_rotted",
+    "looks_like": "t_floor",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
     "id": "t_floor_waxed",
     "copy-from": "t_floor_waxed",
     "bash": {

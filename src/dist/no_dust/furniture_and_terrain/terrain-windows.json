@@ -51,6 +51,18 @@
   },
   {
     "type": "terrain",
+    "id": "t_window_empty_stone",
+    "copy-from": "t_window_empty_stone",
+    "looks_like": "t_window_empty",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
     "id": "t_window_boarded",
     "copy-from": "t_window_boarded",
     "prying": {
