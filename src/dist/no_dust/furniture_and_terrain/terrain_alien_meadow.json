@@ -1,0 +1,79 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_alien_meadow_tree_1",
+    "copy-from": "t_alien_meadow_tree_1",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_alien_meadow_tree_2",
+    "copy-from": "t_alien_meadow_tree_2",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_alien_meadow_tree_3",
+    "copy-from": "t_alien_meadow_tree_3",
+    "transforms_into": "t_alien_meadow_tree_3_harvested",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_alien_meadow_tree_3_harvested",
+    "copy-from": "t_alien_meadow_tree_3_harvested",
+    "transforms_into": "t_alien_meadow_tree_3",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_alien_meadow_tree_trap",
+    "copy-from": "t_alien_meadow_tree_trap",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
