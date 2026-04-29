@@ -1,0 +1,14 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_nl_water_cooler",
+    "copy-from": "f_nl_water_cooler",
+    "looks_like": "f_water_purifier",
+    "bash": {
+      "destroyed_field": [
+        "fd_dirty_water",
+        0
+      ]
+    }
+  }
+]
