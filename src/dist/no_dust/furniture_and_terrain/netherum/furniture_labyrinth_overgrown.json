@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_nl_pipe_plant",
+    "copy-from": "f_nl_pipe_plant",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_nl_climbing_vine",
+    "copy-from": "f_nl_climbing_vine",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
