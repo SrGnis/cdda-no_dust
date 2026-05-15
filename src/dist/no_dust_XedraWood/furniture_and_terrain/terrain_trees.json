@@ -1,0 +1,17 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_highland_holy_tree_no_sword",
+    "copy-from": "t_highland_holy_tree_no_sword",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]

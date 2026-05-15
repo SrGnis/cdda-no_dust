@@ -1,16 +1,16 @@
 [
   {
     "type": "MOD_INFO",
-    "id": "no_dust_mindovermatter",
-    "name": "No Dust - Mind Over Matter",
+    "id": "no_dust_xedra_evolved_innawoods",
+    "name": "No Dust - XedraWood: Stone and Sorcery",
     "authors": [
       "SrGnis"
     ],
-    "description": "Prevents dust from being generated in Mind Over Matter.",
+    "description": "Prevents dust from being generated in XedraWood: Stone and Sorcery.",
     "category": "item_exclude",
     "dependencies": [
       "dda",
-      "mindovermatter"
+      "xedra_evolved_innawoods"
     ],
     "core": false,
     "obsolete": false,
