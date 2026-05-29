@@ -10,5 +10,27 @@
         0
       ]
     }
+  },
+  {
+    "type": "furniture",
+    "id": "f_nl_autodoc",
+    "copy-from": "f_nl_autodoc",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_nl_autodoc_couch",
+    "copy-from": "f_nl_autodoc_couch",
+    "bash": {
+      "destroyed_field": [
+        "fd_mechanical_fluid",
+        0
+      ]
+    }
   }
 ]
