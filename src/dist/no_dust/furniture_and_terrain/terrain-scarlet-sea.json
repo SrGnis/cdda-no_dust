@@ -1,0 +1,18 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_scarlet_light",
+    "copy-from": "t_scarlet_light",
+    "looks_like": "t_utility_light",
+    "bash": {
+      "hit_field": [
+        "fd_dust",
+        0
+      ],
+      "destroyed_field": [
+        "fd_splinters",
+        0
+      ]
+    }
+  }
+]
